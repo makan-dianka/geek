@@ -1,0 +1,64 @@
+Terminal d'android
+    adb shell --> terminal android
+---------------------------------------------------
+
+LES COMMANDE A EXECUTER SUR CONSOLE WINDOW:
+    Connecter via wifi
+        adb tcpip 5555 entrer après adb connect [adresse ip] --> connexion via wifi
+        
+    Copier le fichier 
+        adb push test.py /sdcard/dcim --> copier pc vers android
+        adb pull sdcard/dcim/test.py  --> copier android vers pc
+        adb pull sdcard/dcim .  --> copier tout les elements dans le dossier où on se trouve android vers pc
+    
+    Saisir le text dans un champ
+        adb shell input text 'votre message'  --> saisir dans un champ android
+        
+    Lancer un appel
+        adb shell am start -a android.intent.action.CALL -d tel:[numero tel] --> lancer un appel
+        adb shell input keyevent 6 --> button Fin d'appel
+        
+    Appuyer sur un button
+        adb shell input keyevent 5 --> button d'appel
+        adb shell input keyevent 6 --> button Fin d'appel
+        adb shell input keyevent 4 --> buton retour
+        adb shell input keyevent 3 --> buton home
+        adb shell input keyevent 24 --> button volume +
+        adb shell input keyevent 25 --> button volume -
+        adb shell input keyevent 26 --> button power
+        adb shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN --> button d'accueil (home)
+    
+    Afficher les appareil connecté
+        adb devices --> appareil connecté
+        adb -s (nom de l'appareil) install (package name)  --> installer une application .apk
+        adb -s (nom de l'appareil) uninstall (package name)  --> desinstaller une application 
+    
+    Lancer une application
+        adb shell monkey -p [nom du package] -c android.intent.category.LAUNCHER 1 --> lancer une application
+        
+    Application en cours d'exécution
+        adb shell dumpsys window windows | findstr mCurrentFocus --> application en cours d'execution
+    
+    Arreter une application en cours d'exéction
+        adb shell am force-stop [nom du package] --> arreter une application en cours d'execution
+     
+    Lister tout les packages   
+        adb shell pm list packages --> lister tout les packages
+    
+    Lister tout les tierce packages
+        adb shell pm list packages -3 --> lister tout les tierces packages
+    
+    Supprimer les données d'une application
+        adb shell pm clear [nom du package] --> supprimer tout les données et les caches de l'application
+    
+    Redemarrer le telephone
+        adb reboot --> redémarrage simple
+        
+    Redemarrer en mode recovery
+        adb reboot recovery --> redémarrage sur le recovery
+        
+    Redemarrer en mode bootloader
+        adb reboot bootloader --> redémarrage sur le bootloader - plus précisément en mode Fastboot
+        
+    Voir tout le commande disponible
+        adb --> voir toutes les commandes disponible

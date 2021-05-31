@@ -1,0 +1,8 @@
+Verifier si une chaîne de caractere existe dans une chaîne de caractere
+    SELECT mois, commentaire FROM f2020 WHERE INSTR(commentaire, 'test');
+    ou bien
+    SELECT mois, commentaire FROM f2020 WHERE LOCATE('test', commentaire);
+    
+        Anoter: la difference entre la fonction INSTR() et LOCATE() est:
+        INSTR(chaîne_source, chaîne_rechecher)
+        LOCATE(chaîne_rechercher, chaîne_source)

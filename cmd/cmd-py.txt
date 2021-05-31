@@ -1,0 +1,8 @@
+creation the virtual environnement
+    python -m venv [name of your venv]
+    
+activation of virtual environnement
+    [name of your venv]\scripts\activate ou app_venv\scripts\activate.bat
+    
+multiple selection in komodo:
+    select 1 word to find the same and press "ctrl+d" 

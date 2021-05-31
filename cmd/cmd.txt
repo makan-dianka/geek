@@ -1,0 +1,5 @@
+echo> [nom du fichier.extantion]--> créer un fichier
+mkdir [nom du dossier] --> créer un dossier
+del [nom du fichier] --> supprimer un fichier
+rd [nom du dossier] --> supprimer un dossier
+rd /s /q [non du dossier] --> supprimer un dossier non vide. autrement dit forcé la suppression d'un dossier

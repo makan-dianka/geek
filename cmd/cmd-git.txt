@@ -1,0 +1,13 @@
+Sur la console de git (gitbash), positionnez vous dans le repertoire souhaité à l'aide de commande suivante
+    cd [nom du repertoire] --> changer le repertoire.
+    cd [..] --> revenir au repertoire precedent
+    
+Commande basique et très utile de git
+    git status --> voir le status du dossier
+    git init --> suivre un dossier 
+    git add [nom du fichier ou . pour selection tout] --> ajouter le modificaton du dossier
+    git commit -m ["describtion de la commit"] --> faire un commit, autrement dit enregistrer le modification du dossier
+    
+Envoyer les contenu local vers github autrement dit vers un repository déja existant
+    git push --> pousser vers le depot distant autrement dit pousser vers github
+    git push origin master -f --> force le pousse vers le depôt distant en cas d'echec de la command "git push"
