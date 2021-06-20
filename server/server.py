@@ -73,7 +73,7 @@ class FileTransfert:
         
     def server_to_client(self):
         # blog 0
-        passw = self.password(2)
+        passw = self.password(8)
         
         # blog 1.
         # le socket et adresse du client est accept
