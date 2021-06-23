@@ -9,6 +9,7 @@ avant d'éxecuter ce programme assurez-vous que vous êtes au même reseau avec 
 autrement dit demarrer d'abord le server server.py avant d'executer ce fichier client.py
 
 """
+# pour le bon fonctionnement de ce code, il est prefferable d'utiliser Python 3.XX
 # le modules exigés pour executer ce programme sont :
 # socket, os, sys, tqdm, time
 
@@ -17,6 +18,13 @@ import os
 import sys
 from tqdm import tqdm
 import time
+
+if sys.version_info[0] < 3:
+    print("""
+          CE MODDULE REQUIERT PYTHON 3.X.X
+          """
+          )
+    sys.exit()
 
 class FileTransfert:
     '''
@@ -55,7 +63,7 @@ class FileTransfert:
             sys.exit()
         
         else:
-            # blog 1. recevoir le chemin d'accée c:/documents du server s'il existe et contenu s'il n'est pas vide sinon une exception va s'elever "le chemin spécifié n'existe pas"
+            # blog 1. recevoir le chemin d'accée c:/documents du server s'il existe et ses contenu s'il n'est pas vide sinon une exception va s'elever "le chemin spécifié n'existe pas"
             # Anoter : le prog verifie si il y a des fichier dans c:/documents et les ajouter tous les fichier dans une liste>> file_end=[]
             if "le chemin spécifié n'existe pas" not in data:
                 spl_data = data.split("\n")

@@ -9,14 +9,23 @@ avant d'éxecuter ce programme assurez-vous que vous êtes au même reseau avec 
 que vous voulez partager vos dossiers / fichiers.
 connectez-vous au même reseau puis executer ce fichier  server.py
 """
+# pour le bon fonctionnement de ce code, il est prefferable d'utiliser Python 3.XX
 # le modules exigés pour executer ce programme sont :
-# socket, os, random, tqdm, time
+# socket, os, sys, random, tqdm, time
 
 import socket
 import os
+import sys
 import random
 from tqdm import tqdm
 import time
+
+if sys.version_info[0] < 3:
+    print("""
+          CE MODDULE REQUIERT PYTHON 3.X.X
+          """
+          )
+    sys.exit()
  
 class FileTransfert:
     '''
