@@ -51,6 +51,3 @@ else:
     poison = poison.lower()
     obj = Pecheur(poison)
     obj.point_restant(obj.name, kilo)
-    
-    
-    
