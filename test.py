@@ -1,6 +1,6 @@
 class Pecheur:
-    def __init__(self, poison):
-        self.name = poison
+    def __init__(self, poisson):
+        self.name = poisson
         self.montant = 2000
         self.point_depart = 1500
         self.saumon = 100
@@ -19,18 +19,18 @@ class Pecheur:
         return self.point_depart - self.espadon
     
     
-    def point_restant(self, poison, kilo):
-        if Pecheur(poison).name == "saumon":
+    def point_restant(self, poisson, kilo):
+        if Pecheur(poisson).name == "saumon":
             self.kilo *= kilo
             saumon = self.get_saumon() - self.kilo
             somme = self.montant - saumon
             print(f"Vous avez pêché [Saumon]\nKilo pêché : {kilo}\nPoint perdu kilo: {self.kilo}\nPoint restant : {saumon}\nDebouser : {somme} MAD")
-        elif Pecheur(poison).name == "courbine":
+        elif Pecheur(poisson).name == "courbine":
             self.kilo *= kilo
             courbine = self.get_courbine() - self.kilo
             somme = self.montant - courbine
             print(f"Vous avez pêché [Courbine]\nKilo pêché : {kilo}\nPoint perdu kilo: {self.kilo}\nPoint restant : {courbine}\nDebouser : {somme} MAD")
-        elif Pecheur(poison).name == "espadon":
+        elif Pecheur(poisson).name == "espadon":
             self.kilo *= kilo
             espadon = self.get_espadon() - self.kilo
             somme = self.montant - espadon
