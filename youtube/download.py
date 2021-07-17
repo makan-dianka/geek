@@ -5,7 +5,6 @@
 from pytube import *
 import sys
 
-
 class YouTubeDownloder:
     def __init__(self):
         self.url = str(input("Enter the url of video : "))
