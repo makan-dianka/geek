@@ -2,6 +2,7 @@
 # author   : MAKAN DIANKA
 # email    : MAKAN.DIANKA@HOTMAIL.COM
 # site     : makandianka.pythonanywhere.com/apropos
+
 """
 ici est côté client. c'est programme permet de demander un dossier/fichier et recevoir une reponse du server
 dans localhost en TCP/IP
