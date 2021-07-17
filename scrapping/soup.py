@@ -56,7 +56,6 @@ def getlink():
             pdf_links.append(pdf_link)
         except:
             pass
-    
 getlink()
 
 def savefile():
