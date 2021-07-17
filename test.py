@@ -8,7 +8,6 @@ class Pecheur:
         self.espadon = 30
         self.kilo = 5
         
-
     def get_saumon(self):
         return self.point_depart - self.saumon
     
