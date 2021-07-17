@@ -24,4 +24,4 @@ def mailing(sender, pwd, recever):
     text = mail.as_string()
     server.sendmail(sender,recever,text)
     print("le msg a été envoyé à", recever)
-    server.quit()
+    server.quit() 
