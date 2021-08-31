@@ -1,11 +1,14 @@
 #module pour convertir les devices " euro, fcfa "
 #author : MAKAN DIANKA
 #email : makan.dianka@hotmail.com
+import logging
 
-
+logging.basicConfig(level=logging.INFO, filename='device.log')
 def calcul_device(device):
+    logging.info("exécution de la fonction calcul_device")
     try: 
         if device.lower() == 'e':
+            logging.critical("exécution de la condition euro - fcfa")
             euro = int(input("\n EURO : "))
             franc_fcfa = euro*130
             local = euro*130*5
@@ -24,6 +27,7 @@ def calcul_device(device):
             print()
             print(' '+str(euro)+' €')
         else:
+            logging.info("Saisissez uniquement (E,F,FF)")
             print("\nSaisissez uniquement (E, F ou FF)")
     except ValueError as error:
         print(f"\n Oups! une erreur s'est produite. Source de l'erreur: {error}\n\n Suggestion : saisissez uniquement les chiffres dans les champs")
