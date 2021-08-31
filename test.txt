@@ -1,5 +1,5 @@
 Un permis de pêche à points remplace, désormais le permis de pêche traditionnel.
-
+ 
 Chaque pêcheur possède au départ un capital de 1500 points.
 S'il pêche un Saumon d’atlantique, il perd 100 points,
 30 points pour un espadon, 50 points pour une courbine et

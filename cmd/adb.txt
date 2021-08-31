@@ -1,6 +1,6 @@
 Terminal d'android
     adb shell --> terminal android
----------------------------------------------------
+-------------------------------------------------
 
 LES COMMANDE A EXECUTER SUR CONSOLE WINDOW:
     Connecter via wifi

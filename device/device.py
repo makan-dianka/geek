@@ -2,6 +2,7 @@
 #author : MAKAN DIANKA
 #email : makan.dianka@hotmail.com
 
+
 def calcul_device(device):
     try: 
         if device.lower() == 'e':

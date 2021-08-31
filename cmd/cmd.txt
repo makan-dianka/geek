@@ -1,3 +1,5 @@
+ligne de command window:
+
 echo> [nom du fichier.extantion]--> créer un fichier
 mkdir [nom du dossier] --> créer un dossier
 del [nom du fichier] --> supprimer un fichier

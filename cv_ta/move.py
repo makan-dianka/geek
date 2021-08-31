@@ -4,7 +4,6 @@ import moviepy.editor as mp
 import time
 
 path = [r"C:\YoutubeVideosDownloader", r"C:\tutto\yd"]
-
 def move_file(src):
     path = os.listdir(src)
     for sv in path:

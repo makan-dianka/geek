@@ -1,3 +1,5 @@
+commande git:
+
 Sur la console de git (gitbash), positionnez vous dans le repertoire souhaité à l'aide de commande suivante
     cd [nom du repertoire] --> changer le repertoire.
     cd [..] --> revenir au repertoire precedent

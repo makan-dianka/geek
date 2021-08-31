@@ -4,7 +4,6 @@ path_1 = os.getcwd()
 path_2 =  f'{path_1}/text'
     
 current_path = os.listdir(path_1)
-
 for f in current_path:
     if f.endswith('.txt'):
         shutil.move(f'{path_1}/{f}', f'{path_2}/{f}')

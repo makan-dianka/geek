@@ -2,8 +2,6 @@ from selenium import webdriver
 import time
 import requests
 
-# path = 'C:\webdrivers\chromedriver.exe'
-
 driver = webdriver.Chrome()   
 driver.get('http://makandianka.pythonanywhere.com')
 

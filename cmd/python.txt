@@ -1,3 +1,5 @@
+python commandes necessary:
+
 creation the virtual environnement
     python -m venv [name of your venv]
     

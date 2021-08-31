@@ -11,9 +11,5 @@ def text_to_audio(path, text):
     print("\nAudio Saved in this path: {}".format(path))
 
 print("\nEnter the full path to save your audio file. (ex: c:\path\audio.mp3)")
-
-with open('c:/tutto/q_charlotte.txt', 'r') as q:
-    read_line = q.read()
-    path = input("Audio's path : ")
-    text = read_line               #input("Enter your text : ")
-    text_to_audio(path, text)
+path = input("path : ")
+text = input("text : ")
