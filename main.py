@@ -1,14 +1,25 @@
-import requests
-from bs4 import BeautifulSoup
+import socket
+import os
+import sys
+import random
+from tqdm import tqdm
+import time
 
-url = 'https://www.ofpra.gouv.fr/fr/asile/la-procedure-de-demande-d-asile/demander-l-asile-en-france'
-resp = requests.get(url)
+class FileTransfert:    
+    def __init__(self):
+        self.host = socket.gethostbyname(socket.gethostname())
+        self.port = 80
+        self.server_socket = self.host, self.port
+        self.conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.conn.bind(self.server_socket)
+        self.conn.listen(2)
+        print(f"\nsocket ouvert: {self.host}:{self.port}\nserver en ecoute...")
 
-soup = BeautifulSoup(resp.text, 'lxml')
-finder_h_one = soup.find('div', class_='desc-res')
-finder = soup.find_all('div', class_='finder_h_one')
-compte = len(finder)
-h_one = finder_h_one
-
-print(h_one.text)
-print(compte)
+        while True:
+            client_socket, client_addr = self.conn.accept()
+            print(f"[+] {client_addr[0]}:{client_addr[1]} est connecté")
+            
+            filename = "<h1> Bonjour Makan  </h1>".encode("utf-8")
+            client_socket.sendall(filename)
+            
+obj = FileTransfert()

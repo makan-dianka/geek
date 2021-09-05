@@ -48,7 +48,7 @@ class FileTransfert:
     
     def __init__(self, path):
         self.host = socket.gethostbyname(socket.gethostname())
-        self.port = 8000
+        self.port = 9000
         self.server_socket = self.host, self.port
         self.conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.conn.bind(self.server_socket)
@@ -84,7 +84,7 @@ class FileTransfert:
     def server_to_client(self):
         # blog 0
         passw = self.password(8)
-        
+       
         # blog 1.
         # le socket et adresse du client est accept
         # ensuite afficher un msg contenant  l'adresse du client ip:port
