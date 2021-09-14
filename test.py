@@ -1,4 +1,5 @@
-def test(name):
-    return "Bonjour "+name
-    print("main")
 
+print("main")
+print("main")
+print("main")
+print("main")
