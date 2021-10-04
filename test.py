@@ -42,8 +42,6 @@ def client(nom, select1, select2):
         print("20% de reduiction")
         print(f"Total {p}€")
 
-
-
 for prod,prix in produits.items():
     print(f"{prod} : {prix} €")
 
@@ -52,12 +50,3 @@ name = input("votre nom : ")
 select1 = input("select produit 1 : ")
 select2 = input("select produit 2 : ")
 client(name, select1, select2)
-
-    
-
-
-
-    
-    
-    
-        
